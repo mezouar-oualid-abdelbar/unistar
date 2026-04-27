@@ -1,11 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
-{ 
-    public Camera playerCamera;
+{  
 
     // Shooting parameters
     public bool isShooting , readyToShoot;
@@ -25,6 +26,18 @@ public class Weapon : MonoBehaviour
     public float bulletSpeed = 30f;
     public float bulletLifetime = 3f;
 
+    //reload 
+    public float reloadTime;
+    public bool isReloading;
+    public int magazineSize, bulletLeft;
+
+    //ui
+    public TextMeshProUGUI bulletText;
+
+    private Animator animator;
+
+
+
     public enum ShootingMode
     {
         Single,
@@ -32,12 +45,16 @@ public class Weapon : MonoBehaviour
         Automatic
     }
 
+    
     public ShootingMode shootingMode = ShootingMode.Single;
 
     private void Awake()
     {
         readyToShoot = true;
         burstBulletLeft = bulletsPerBurst;
+        animator = GetComponent<Animator>();
+
+        bulletLeft = magazineSize;
     }
 
     void Update()
@@ -56,9 +73,28 @@ public class Weapon : MonoBehaviour
             burstBulletLeft = bulletsPerBurst;
             Shoot();
         }
+        if (Input.GetKeyDown(KeyCode.R) && bulletLeft < magazineSize && !isReloading)
+        {
+            Reload();
+        }
+
+        if(bulletText != null)
+        {
+            bulletText.text = bulletLeft + "  ";
+        }
     }
     private void Shoot()
     {
+
+        if (bulletLeft <= 0)
+        {
+            Sounds.Instance.empty.Play();
+            return;
+        }
+
+        bulletLeft--;
+        animator.SetTrigger("recoil");
+        Sounds.Instance.shoting.Play();
 
         readyToShoot = false;
 
@@ -84,12 +120,29 @@ public class Weapon : MonoBehaviour
         }
 
         //burst shooting
-        if (shootingMode == ShootingMode.Burst && burstBulletLeft > 1  )
+        if (shootingMode == ShootingMode.Burst && burstBulletLeft > 1)
         {
-            burstBulletLeft--; 
+            burstBulletLeft--;
             Invoke("Shoot", shootingDelay);
-        }   
+        }
 
+    }
+
+    
+
+    private void Reload()
+    {   
+        
+        isReloading = true;
+        animator.SetTrigger("reload");
+        Sounds.Instance.reload.Play(); 
+        Invoke("FinishReloading", reloadTime);
+    }
+
+    private void FinishReloading()
+    {
+        bulletLeft = magazineSize;
+        isReloading = false;
     }
     private void ResetShot()
     {
@@ -98,7 +151,7 @@ public class Weapon : MonoBehaviour
     }
     private Vector3 CalculateDirectionAndSpread()
     {
-        Ray ray = playerCamera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+        Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
         RaycastHit hit;
 
         Vector3 targetPoint;
