@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -93,7 +93,7 @@ public class Weapon : MonoBehaviour
         }
 
         bulletLeft--;
-        animator.SetTrigger("recoil");
+        //animator.SetTrigger("recoil");
         Sounds.Instance.shoting.Play();
 
         readyToShoot = false;
@@ -134,7 +134,7 @@ public class Weapon : MonoBehaviour
     {   
         
         isReloading = true;
-        animator.SetTrigger("reload");
+        //animator.SetTrigger("reload");
         Sounds.Instance.reload.Play(); 
         Invoke("FinishReloading", reloadTime);
     }
