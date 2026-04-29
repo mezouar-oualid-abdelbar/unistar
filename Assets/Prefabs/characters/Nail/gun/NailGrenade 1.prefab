@@ -1,0 +1,383 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1541421481936314062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4888642881935435056}
+  m_Layer: 0
+  m_Name: nailHole4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4888642881935435056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541421481936314062}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.2423767, y: -0.0135356765, z: -0.93175673, w: 0.26999927}
+  m_LocalPosition: {x: -0.00457, y: 0.00058, z: 0.0075}
+  m_LocalScale: {x: 1, y: 1, z: 1.2864395}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4658581629620293742}
+  m_LocalEulerAnglesHint: {x: 6.065, y: 332.512, z: 210.836}
+--- !u!1 &2087725882905581295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1024128882751180833}
+  m_Layer: 0
+  m_Name: nailHole6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1024128882751180833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087725882905581295}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.2423767, y: -0.0135356765, z: -0.93175673, w: 0.26999927}
+  m_LocalPosition: {x: -0.00457, y: 0.00058, z: 0.0075}
+  m_LocalScale: {x: 1, y: 1, z: 1.2864395}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4658581629620293742}
+  m_LocalEulerAnglesHint: {x: 6.065, y: 332.512, z: 210.836}
+--- !u!1 &2203483021172896699
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4658581629620293742}
+  - component: {fileID: 7693423397727248793}
+  - component: {fileID: 7835890837680188970}
+  - component: {fileID: 1737986077954490706}
+  - component: {fileID: -4737191692165692139}
+  - component: {fileID: -4412786662569454556}
+  m_Layer: 0
+  m_Name: NailGrenade 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4658581629620293742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2203483021172896699}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -2.2859, y: 5.95, z: 9.85}
+  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4748569040370962653}
+  - {fileID: 2013142380986911119}
+  - {fileID: 22675652550975702}
+  - {fileID: 4888642881935435056}
+  - {fileID: 446943326090166277}
+  - {fileID: 1024128882751180833}
+  - {fileID: 5037796986147226158}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7693423397727248793
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2203483021172896699}
+  m_Mesh: {fileID: 2000164079686221890, guid: 4dc069e886e459d4f8039e0115b58fbf, type: 3}
+--- !u!23 &7835890837680188970
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2203483021172896699}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -2443490784570210810, guid: 4dc069e886e459d4f8039e0115b58fbf, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1737986077954490706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2203483021172896699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e59c45d9f892df43b89562ff1eed126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionTime: 1
+  nailSpeed: 20
+  nailPrefab: {fileID: 3934310440432418533, guid: 05fe4d59dc692264b90e87f353d26824, type: 3}
+  nailHoles:
+  - {fileID: 4748569040370962653}
+  - {fileID: 2013142380986911119}
+  - {fileID: 22675652550975702}
+  - {fileID: 4888642881935435056}
+  - {fileID: 446943326090166277}
+  - {fileID: 1024128882751180833}
+  - {fileID: 5037796986147226158}
+--- !u!54 &-4737191692165692139
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2203483021172896699}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 112
+  m_CollisionDetection: 2
+--- !u!135 &-4412786662569454556
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2203483021172896699}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.008526816
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &2344780068042875228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5037796986147226158}
+  m_Layer: 0
+  m_Name: nailHole7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5037796986147226158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2344780068042875228}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.31600013, y: 0.6570792, z: -0.62841666, w: 0.27107802}
+  m_LocalPosition: {x: 0.007249999, y: -0.004379997, z: -0.00034999906}
+  m_LocalScale: {x: 1, y: 1, z: 1.2864395}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4658581629620293742}
+  m_LocalEulerAnglesHint: {x: 40.883, y: 454.796, z: 270.794}
+--- !u!1 &2901344509799257449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4748569040370962653}
+  m_Layer: 0
+  m_Name: nailHole1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4748569040370962653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2901344509799257449}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.18896611, y: 0.68138963, z: 0.18896611, w: 0.68138963}
+  m_LocalPosition: {x: 0.00775, y: 0.00463, z: -0.00025}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4658581629620293742}
+  m_LocalEulerAnglesHint: {x: -31, y: 90, z: 0}
+--- !u!1 &3415970365520136298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2013142380986911119}
+  m_Layer: 0
+  m_Name: NailHole2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2013142380986911119
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3415970365520136298}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.015762927, y: 0.32485607, z: -0.0058594947, w: 0.945614}
+  m_LocalPosition: {x: 0.004710002, y: -5.9604643e-10, z: 0.007469997}
+  m_LocalScale: {x: 1, y: 1, z: 0.94309}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4658581629620293742}
+  m_LocalEulerAnglesHint: {x: -1.49, y: 37.935, z: -1.222}
+--- !u!1 &4990821523192881377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 22675652550975702}
+  m_Layer: 0
+  m_Name: nailHole3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &22675652550975702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4990821523192881377}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.69413066, y: 0.12975678, z: -0.667158, w: 0.2371624}
+  m_LocalPosition: {x: -0.00765, y: -0.00467, z: -0.00051}
+  m_LocalScale: {x: 1, y: 1, z: 1.2864395}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4658581629620293742}
+  m_LocalEulerAnglesHint: {x: 30.158, y: 270.178, z: 189.071}
+--- !u!1 &9152774087352651913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 446943326090166277}
+  m_Layer: 0
+  m_Name: nailHole5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &446943326090166277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9152774087352651913}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.25678855, y: -0.44115952, z: 0.5631701, w: 0.6498288}
+  m_LocalPosition: {x: -0.00041, y: -0.00757, z: 0.00467}
+  m_LocalScale: {x: 1, y: 1, z: 1.2864395}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4658581629620293742}
+  m_LocalEulerAnglesHint: {x: 56.164, y: 329.319, z: 425.173}
